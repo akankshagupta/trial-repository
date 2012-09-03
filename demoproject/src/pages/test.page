@@ -1,0 +1,19 @@
+<apex:page standardController="Feedback__c" sidebar="false" showHeader="true" standardStylesheets="true">
+
+ <apex:form >
+    <apex:pageBlock title="Feedback">
+        <apex:pageBlockSection >
+        <apex:pageBlockSectionItem >
+        <apex:outputText value="Feedback Code"/>
+        <apex:inputField value="{!Feedback__c.FCode__c}"/> 
+        </apex:pageBlockSectionItem><br/> 
+               <apex:inputField value="{!Feedback__c.WhatYouLike__c }"/><br/>
+               <apex:inputField value="{!Feedback__c.Improvements__c}"/><br/> 
+               <apex:inputField value="{!Feedback__c.OverallComments__c}"/> 
+        </apex:pageBlockSection>
+        <apex:pageBlockButtons location="bottom" >
+        <apex:commandButton value="Save" action="{!save}"/>
+        </apex:pageBlockButtons>
+    </apex:pageBlock>
+        </apex:form>
+</apex:page>

@@ -1,0 +1,11 @@
+<apex:page standardController="Schedule__c">
+<apex:pageBlock title="Feedback Page">
+<apex:outputField value="{!Schedule__c.Trainer__c}"/> <br/>
+<apex:outputField value="{!Schedule__c.Training_Date__c}"/>
+<apex:pageBlockSection title="Schedule Type">
+<apex:pageBlockTable value="{! Schedule__c.Trainer__c}" var="SCHEDULE"> 
+<!-- <apex:column value="{! acc.name}"/> -->
+</apex:pageBlockTable>
+</apex:pageBlockSection>
+</apex:pageBlock>
+</apex:page>
