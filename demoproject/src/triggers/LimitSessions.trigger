@@ -1,5 +1,6 @@
 trigger LimitSessions on Schedule__c (before insert) {
 	//This trigger is to limit the sessions to maximum of three.
+	//Demo Commit Trial
 	List<Schedule__c> sch=new List<Schedule__c>();
 	Set<Id> newschedules=new Set<Id>();
 	sch=Trigger.new;
